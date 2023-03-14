@@ -24,8 +24,9 @@
 			<nav class="navigation-flex">
 				<a href="./index.html" class="logo logo-marg"><span class="logo logo-web">Web</span>Studio</a>
 				<ul class="navigation list menu-flex">
-					<li class="navigation-list-item"><a href="./index.html" class="navigation-item">Studio</a></li>
-					<li class="navigation-list-item"><a href="./portfolio.html" class="navigation-item">Portfolio</a>
+					<li class="navigation-list-item"><a href="./index.html" class="navigation-item active">Studio</a>
+					</li>
+					<li class="navigation-list-item"><a href="./portfolio.html" class="navigation-item ">Portfolio</a>
 					</li>
 					<li class="navigation-list-item"><a href="" class="navigation-item">Contacts</a></li>
 				</ul>
@@ -50,7 +51,7 @@
 		<section class="hero">
 			<div class="container">
 				<h1 class="hero-title">Effective Solutions for Your Business</h1>
-				<button type="button" class="button hero-btn">Order Service</button>
+				<button type="button" class="button hero-btn" data-modal-open>Order Service</button>
 			</div>
 		</section>
 
@@ -302,6 +303,14 @@
 			</div>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button type="button" class="modal-close" data-modal-close><svg width="8px" height="8px" class="close-icon">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg></button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
